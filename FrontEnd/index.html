@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="Description"
+      content="Weather application to display weather data based on user searches"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="apple-touch-icon" href="../images/icon-512x512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#044369" />
+    <title>Daily Weather</title>
+  </head>
+  <body>
+      <div class="weather-details">
+        <form id="submit_city">
+          <input type="text" id="search_city" placeholder="Type Location" style="font-family: 'Readex Pro', sans-serif;" />
+          <label for="search_city"></label>
+          <button type="submit">search</button>
+        </form>
+        <div class="city-details">
+          <div class="city-name">
+            <span class="city-date" id="city_date" style="margin: 0;"></span>
+            <p class="city-text" id="city_name"></p>
+            
+          </div>
+          <div class="city-weather" id="city_weather"></div>
+        </div>
+        <div>
+          <h4>Hourly Forecast</h4>
+          <hr/>
+          <div class="hourly-forecast" id="hourly-forecast"></div>
+          <hr/>
+        </div>
+        <div class="details">
+          <h4>Details</h4>
+          <div class="details-card" id="weather_details">
+            <div class="single-details">
+              <div class="weather-item">
+                <p class="city-text">Humidity</p>
+                <span id="humidity"></span>
+              </div>
+            </div>
+            <div class="more-details">
+              <p class="city-text">Wind</p>
+              <span id="wind"></span>
+            </div>
+            <div class="single-details">
+              <p class="city-text">UV Index</p>
+              <span id="pressure"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
